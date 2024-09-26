@@ -50,15 +50,15 @@ from decouple import config
 
 load_dotenv()
 
-# host = os.environ['DATABASE_HOST']
-# db = os.environ['DATABASE_NAME']
-# user = os.environ['DATABASE_USER']
-# password = os.environ['DATABASE_PASSWORD']
+host = os.environ['DATABASE_HOST']
+db = os.environ['DATABASE_NAME']
+user = os.environ['DATABASE_USER']
+password = os.environ['DATABASE_PASSWORD']
 
-host = "localhost"
-db = "jucuas"
-user = "root"
-password = "Elias2001$"
+# host = "localhost"
+# db = "bd_prueba"
+# user = "daniel"
+# password = "Daniel$2003"
 
 con = SQLConnector(host=host, db=db, port="3306", user=user, password=password)
 con.connect()

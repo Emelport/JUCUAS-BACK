@@ -113,13 +113,16 @@ WSGI_APPLICATION = 'jucuas_back.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DATABASE_NAME', default='jucuas'),
-        'USER': config('DATABASE_USER', default='root'),
-        'PASSWORD': config('DATABASE_PASSWORD', default='Elias2001$'),
-        'HOST': config('DATABASE_HOST', default='127.0.0.1'),
-        'PORT': config('DATABASE_PORT', default='3306'),
+        'NAME': 'jucuas',
+        'USER': 'daniel',
+        'PASSWORD': 'Daniel$2003',
+        'HOST': '127.0.0.1',  # o 'localhost'
+        'PORT': '3306',
     }
 }
+
+print(DATABASES)
+
 
 #-- User model custom
 AUTH_USER_MODEL = 'accounts.User'
